@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+  --page-background: white;
+  --top-bar-background: hotpink;
+}
+
+/* Dark Theme Styles */
+.dark-theme {
+  color: #ffffff;
+
+  --page-background: black;
+  --top-bar-background: darkmagenta;
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background-color: var(--page-background);
+}
