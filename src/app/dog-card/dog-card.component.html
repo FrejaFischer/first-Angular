@@ -1,0 +1,7 @@
+<p>dog-card works!</p>
+<!-- <p *ngIf="dogPic$">Hello?</p> -->
+<button (click)="setShow()">Show Doggo?</button>
+<p>{{ showPictures }}</p>
+<div *ngIf="showPictures">
+  <img [src]="dogPic$ | async" alt="" />
+</div>
