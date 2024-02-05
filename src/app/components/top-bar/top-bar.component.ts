@@ -11,12 +11,12 @@ import { LoggerService } from '../../services/logger.service';
 export class TopBarComponent {
   constructor(private logger: LoggerService) {}
 
-  showMessage(message: any) {
+  showMessage(message: string | number) {
     this.logger.log(message);
-  }
+  } //Can be called with a string or a number
   showError(message: string) {
     this.logger.error(message);
-  }
+  } //Can only be called with a string
   showWarning(message: string) {
     this.logger.warn(message);
   }

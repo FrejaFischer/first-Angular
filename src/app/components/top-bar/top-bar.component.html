@@ -1,6 +1,9 @@
 <div>
   <p>top-bar works!</p>
-  <button (click)="showMessage('hello world!')">Console Message</button>
+  <button (click)="showMessage('hello world!')">Console Message string</button>
+  <button (click)="showMessage('The magic number is ' + 42)">
+    Console Message number
+  </button>
   <button (click)="showError('ERROR')">Error Message</button>
   <button (click)="showWarning('Are u sure?')">Warning Message</button>
 </div>
