@@ -1,12 +1,17 @@
 div {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 50vw;
-  height: 5rem;
+  height: fit-content;
   background-color: var(--top-bar-background);
 }
 
 p {
   color: black;
+}
+
+button {
+  margin: 1rem 0 1rem 0;
 }
